@@ -14,3 +14,7 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "learning_templates.settings")
 
 application = get_wsgi_application()
+
+import random
+from first_app.models import Topic,Webpage,AccessRecord
+from faker import Faker
